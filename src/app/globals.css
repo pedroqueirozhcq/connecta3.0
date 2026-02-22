@@ -1,0 +1,73 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Fundo Grafite Escuro Profundo (Baseado na Logo) */
+    --background: 240 10% 4%;
+    --foreground: 0 0% 98%;
+    
+    --card: 240 10% 7%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 240 10% 4%;
+    --popover-foreground: 0 0% 98%;
+    
+    /* Roxo Vibrante (Nova Identidade) */
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 240 10% 12%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 65%;
+    
+    /* Acento Lavanda Complementar */
+    --accent: 280 80% 70%;
+    --accent-foreground: 240 10% 4%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 10% 15%;
+    --input: 240 10% 15%;
+    --ring: 262 83% 58%;
+    --radius: 0.75rem;
+    
+    --chart-1: 262 83% 58%;
+    --chart-2: 280 80% 70%;
+    --chart-3: 240 10% 40%;
+    
+    --sidebar-background: 240 10% 3%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 10% 8%;
+    --sidebar-accent-foreground: 262 83% 58%;
+    --sidebar-border: 240 10% 8%;
+    --sidebar-ring: 262 83% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.font-headline {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.glass-morphism {
+  background: rgba(10, 10, 12, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
